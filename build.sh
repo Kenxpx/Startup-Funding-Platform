@@ -4,7 +4,7 @@ echo "🚀 Building Startup Catalyst Network for Hostinger deployment..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+npm install --legacy-peer-deps
 
 # Build the project
 echo "🔨 Building project..."
