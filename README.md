@@ -1,67 +1,108 @@
-# Hostinger Deployment Guide
+# 🚀 Startup Funding Platform
 
-## Prerequisites
-- Node.js 18+ installed
-- npm or yarn package manager
+A scalable, responsive, and production-ready platform built with Next.js and Tailwind CSS to connect startups, investors, mentors, and partners. This project implements a complete funding lifecycle with static deployment capabilities and a modular component structure.
 
-## Build Steps
+---
 
-1. **Install dependencies:**
-   \`\`\`bash
-   npm install --legacy-peer-deps
-   \`\`\`
+## 🌐 Live Demo
 
-2. **Build the project:**
-   \`\`\`bash
-   npm run build
-   \`\`\`
+[View Live Site](https://genops.sachinbind.net)
 
-3. **The build will create an `out` folder with static files**
+---
 
-## Hostinger Upload Steps
+## 🔧 Tech Stack
 
-1. **Access your Hostinger control panel**
-2. **Go to File Manager**
-3. **Navigate to public_html folder**
-4. **Delete existing files (if any)**
-5. **Upload all contents from the `out` folder to public_html**
-6. **Make sure the index.html is in the root of public_html**
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+- Formspree (for form handling)
+- Hostinger (static deployment)
 
-## File Structure After Upload
-\`\`\`
+---
+
+## 📁 Features
+
+- Fully static website using `next export`
+- Modular, component-driven architecture
+- Role-based registration (Startup, Investor, Mentor, Partner)
+- SEO-optimized, responsive layout
+- Contact forms, event listings, and blog
+- Mobile-first design with clean UI
+
+---
+
+## 🛠 Setup Instructions
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Development
+
+```bash
+git clone https://github.com/Kenxpx/Startup-Funding-Platform.git
+cd Startup-Funding-Platform
+
+npm install --legacy-peer-deps
+npm run dev
+```
+
+### Production Build
+
+```bash
+npm run build
+npm run export
+```
+
+Exports static files to the `/out` directory.
+
+---
+
+## 🚀 Deployment (Hostinger)
+
+1. Build the site using the steps above.
+2. Open Hostinger File Manager → `public_html`
+3. Delete existing files (if any)
+4. Upload contents of the `/out` folder
+5. Ensure `index.html` is at the root of `public_html`
+
+---
+
+## 📂 Directory Structure After Upload
+
+```
 public_html/
 ├── index.html
 ├── _next/
-├── images/
 ├── about/
-├── services/
+├── blog/
 ├── contact/
 ├── events/
-├── blog/
-└── join-network/
-\`\`\`
+├── join-network/
+├── services/
+└── images/
+```
 
-## Important Notes
+---
 
-- All images are optimized for static hosting
-- No server-side features are used
-- All forms use external services (Formspree)
-- WhatsApp integration works client-side
-- All routes are pre-generated as static HTML
+## 🧪 Troubleshooting
 
-## Troubleshooting
+- Clear browser cache after upload
+- Ensure all folders are uploaded completely
+- Confirm `index.html` is at root
+- Use server error logs for debugging if needed
 
-If you encounter any issues:
-1. Clear browser cache
-2. Check that all files uploaded correctly
-3. Verify index.html is in public_html root
-4. Check Hostinger error logs in control panel
+---
 
-## Custom Domain
-If using a custom domain, make sure to:
-1. Update DNS settings in Hostinger
-2. Wait for DNS propagation (up to 24 hours)
-3. Enable SSL certificate in Hostinger panel
-\`\`\`
+## 📄 License
 
-Let me also create a simple build script to make deployment easier:
+MIT License
+
+---
+
+## 👤 Author
+
+**Sachin Bind**  
+[GitHub](https://github.com/Kenxpx)
