@@ -6,7 +6,7 @@ A scalable, responsive, and production-ready platform built with Next.js and Tai
 
 ## 🌐 Live Demo
 
-[View Live Site](https://test.sachinbind.net)
+[View Live Site](https://startupcatalystnetwork.in/)
 
 ---
 
